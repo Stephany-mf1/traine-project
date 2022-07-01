@@ -48,7 +48,7 @@ export default {
   async deleteTutorial(tutorial){
    await this.$store.dispatch('tutorial/deleteTutorial', tutorial)
   },
-  async btnEditarTutorial(tutorial){
+    btnEditarTutorial(tutorial){
     this.$router.push({ path: '/editedTutorial', query: { id: tutorial.id} })
   }
   }

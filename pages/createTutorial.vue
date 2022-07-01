@@ -66,7 +66,7 @@ export default {
   },
 
 methods:{
-    async createTutorial(){ 
+     createTutorial(){ 
        const dataTutorial = {
         //passar o obejeto como parametro com valor que foi recebido na tela
          id: this.id,
@@ -76,7 +76,7 @@ methods:{
          createdAt : this.createdAt,
          updatedAt : this.updatedAt
         }
-          await this.$store.dispatch('tutorial/createTutorial', dataTutorial)
+         this.$store.dispatch('tutorial/createTutorial', dataTutorial)
           
           //passar uma mensagem para informar ao usuário que seu dado foi inserido
 

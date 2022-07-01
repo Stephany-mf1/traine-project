@@ -76,13 +76,14 @@ export default {
 
   data() {
     return {   
+    tutorial:{
       id: "",
       title: "",
       description : "",
       published : "",
       createdAt : "",
       updatedAt : "",
-    tutorial:{}
+    }
     }
   },
   async fetch(){
